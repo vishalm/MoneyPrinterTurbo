@@ -7,99 +7,99 @@
   <a href="https://github.com/harry0703/MoneyPrinterTurbo/network/members"><img src="https://img.shields.io/github/forks/harry0703/MoneyPrinterTurbo.svg?style=for-the-badge" alt="Forks"></a>
   <a href="https://github.com/harry0703/MoneyPrinterTurbo/blob/main/LICENSE"><img src="https://img.shields.io/github/license/harry0703/MoneyPrinterTurbo.svg?style=for-the-badge" alt="License"></a>
 </p>
-<br>
-<h3>简体中文 | <a href="README-en.md">English</a></h3>
+
+<h3>English | <a href="README.md">简体中文</a></h3>
+
 <div align="center">
   <a href="https://trendshift.io/repositories/8731" target="_blank"><img src="https://trendshift.io/api/badge/repositories/8731" alt="harry0703%2FMoneyPrinterTurbo | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 </div>
-<br>
-只需提供一个视频 <b>主题</b> 或 <b>关键词</b> ，就可以全自动生成视频文案、视频素材、视频字幕、视频背景音乐，然后合成一个高清的短视频。
-<br>
 
-<h4>Web界面</h4>
+Simply provide a <b>topic</b> or <b>keyword</b> for a video, and it will automatically generate the video copy, video
+materials, video subtitles, and video background music before synthesizing a high-definition short video.
 
-![](docs/webui.jpg)
+### WebUI
 
-<h4>API界面</h4>
+![](docs/webui-en.jpg)
+
+### API Interface
 
 ![](docs/api.jpg)
 
 </div>
 
-## 特别感谢 🙏
+## Special Thanks 🙏
 
-由于该项目的 **部署** 和 **使用**，对于一些小白用户来说，还是 **有一定的门槛**，在此特别感谢
-**录咖（AI智能 多媒体服务平台）** 网站基于该项目，提供的免费`AI视频生成器`服务，可以不用部署，直接在线使用，非常方便。
+Due to the **deployment** and **usage** of this project, there is a certain threshold for some beginner users. We would
+like to express our special thanks to
 
-- 中文版：https://reccloud.cn
-- 英文版：https://reccloud.com
+**RecCloud (AI-Powered Multimedia Service Platform)** for providing a free `AI Video Generator` service based on this
+project. It allows for online use without deployment, which is very convenient.
 
-![](docs/reccloud.cn.jpg)
+https://reccloud.com
 
-## 感谢赞助 🙏
+![](docs/reccloud.com.jpg)
 
-感谢佐糖 https://picwish.cn 对该项目的支持和赞助，使得该项目能够持续的更新和维护。
+## Features 🎯
 
-佐糖专注于**图像处理领域**，提供丰富的**图像处理工具**，将复杂操作极致简化，真正实现让图像处理更简单。
+- [x] Complete **MVC architecture**, **clearly structured** code, easy to maintain, supports both `API`
+  and `Web interface`
+- [x] Supports **AI-generated** video copy, as well as **customized copy**
+- [x] Supports various **high-definition video** sizes
+    - [x] Portrait 9:16, `1080x1920`
+    - [x] Landscape 16:9, `1920x1080`
+- [x] Supports **batch video generation**, allowing the creation of multiple videos at once, then selecting the most
+  satisfactory one
+- [x] Supports setting the **duration of video clips**, facilitating adjustments to material switching frequency
+- [x] Supports video copy in both **Chinese** and **English**
+- [x] Supports **multiple voice** synthesis
+- [x] Supports **subtitle generation**, with adjustable `font`, `position`, `color`, `size`, and also
+  supports `subtitle outlining`
+- [x] Supports **background music**, either random or specified music files, with adjustable `background music volume`
+- [x] Video material sources are **high-definition** and **royalty-free**
+- [x] Supports integration with various models such as **OpenAI**, **moonshot**, **Azure**, **gpt4free**, **one-api**,
+  **qianwen**, **Google Gemini**, **Ollama** and more
 
-![picwish.jpg](docs/picwish.jpg)
+❓[How to Use the Free OpenAI GPT-3.5 Model?](https://github.com/harry0703/MoneyPrinterTurbo/blob/main/README-en.md#common-questions-)
 
-## 功能特性 🎯
+### Future Plans 📅
 
-- [x] 完整的 **MVC架构**，代码 **结构清晰**，易于维护，支持 `API` 和 `Web界面`
-- [x] 支持视频文案 **AI自动生成**，也可以**自定义文案**
-- [x] 支持多种 **高清视频** 尺寸
-    - [x] 竖屏 9:16，`1080x1920`
-    - [x] 横屏 16:9，`1920x1080`
-- [x] 支持 **批量视频生成**，可以一次生成多个视频，然后选择一个最满意的
-- [x] 支持 **视频片段时长** 设置，方便调节素材切换频率
-- [x] 支持 **中文** 和 **英文** 视频文案
-- [x] 支持 **多种语音** 合成，可 **实时试听** 效果
-- [x] 支持 **字幕生成**，可以调整 `字体`、`位置`、`颜色`、`大小`，同时支持`字幕描边`设置
-- [x] 支持 **背景音乐**，随机或者指定音乐文件，可设置`背景音乐音量`
-- [x] 视频素材来源 **高清**，而且 **无版权**，也可以使用自己的 **本地素材**
-- [x] 支持 **OpenAI**、**Moonshot**、**Azure**、**gpt4free**、**one-api**、**通义千问**、**Google Gemini**、**Ollama**、
-  **DeepSeek**、 **文心一言** 等多种模型接入
-    - 中国用户建议使用 **DeepSeek** 或 **Moonshot** 作为大模型提供商（国内可直接访问，不需要VPN。注册就送额度，基本够用）
+- [ ] Introduce support for GPT-SoVITS dubbing
+- [ ] Enhance voice synthesis with large models for a more natural and emotionally resonant voice output
+- [ ] Incorporate video transition effects to ensure a smoother viewing experience
+- [ ] Improve the relevance of video content
+- [ ] Add options for video length: short, medium, long
+- [ ] Package the application into a one-click launch bundle for Windows and macOS for ease of use
+- [ ] Enable the use of custom materials
+- [ ] Offer voiceover and background music options with real-time preview
+- [ ] Support a wider range of voice synthesis providers, such as OpenAI TTS, Azure TTS
+- [ ] Automate the upload process to the YouTube platform
 
-### 后期计划 📅
+## Video Demos 📺
 
-- [ ] GPT-SoVITS 配音支持
-- [ ] 优化语音合成，利用大模型，使其合成的声音，更加自然，情绪更加丰富
-- [ ] 增加视频转场效果，使其看起来更加的流畅
-- [ ] 增加更多视频素材来源，优化视频素材和文案的匹配度
-- [ ] 增加视频长度选项：短、中、长
-- [ ] 支持更多的语音合成服务商，比如 OpenAI TTS
-- [ ] 自动上传到YouTube平台
-
-## 视频演示 📺
-
-### 竖屏 9:16
+### Portrait 9:16
 
 <table>
 <thead>
 <tr>
-<th align="center"><g-emoji class="g-emoji" alias="arrow_forward">▶️</g-emoji> 《如何增加生活的乐趣》</th>
-<th align="center"><g-emoji class="g-emoji" alias="arrow_forward">▶️</g-emoji> 《金钱的作用》<br>更真实的合成声音</th>
-<th align="center"><g-emoji class="g-emoji" alias="arrow_forward">▶️</g-emoji> 《生命的意义是什么》</th>
+<th align="center"><g-emoji class="g-emoji" alias="arrow_forward">▶️</g-emoji> How to Add Fun to Your Life </th>
+<th align="center"><g-emoji class="g-emoji" alias="arrow_forward">▶️</g-emoji> What is the Meaning of Life</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td align="center"><video src="https://github.com/harry0703/MoneyPrinterTurbo/assets/4928832/a84d33d5-27a2-4aba-8fd0-9fb2bd91c6a6"></video></td>
-<td align="center"><video src="https://github.com/harry0703/MoneyPrinterTurbo/assets/4928832/af2f3b0b-002e-49fe-b161-18ba91c055e8"></video></td>
 <td align="center"><video src="https://github.com/harry0703/MoneyPrinterTurbo/assets/4928832/112c9564-d52b-4472-99ad-970b75f66476"></video></td>
 </tr>
 </tbody>
 </table>
 
-### 横屏 16:9
+### Landscape 16:9
 
 <table>
 <thead>
 <tr>
-<th align="center"><g-emoji class="g-emoji" alias="arrow_forward">▶️</g-emoji>《生命的意义是什么》</th>
-<th align="center"><g-emoji class="g-emoji" alias="arrow_forward">▶️</g-emoji>《为什么要运动》</th>
+<th align="center"><g-emoji class="g-emoji" alias="arrow_forward">▶️</g-emoji> What is the Meaning of Life</th>
+<th align="center"><g-emoji class="g-emoji" alias="arrow_forward">▶️</g-emoji> Why Exercise</th>
 </tr>
 </thead>
 <tbody>
@@ -110,81 +110,64 @@
 </tbody>
 </table>
 
-## 配置要求 📦
+## System Requirements 📦
 
-- 建议最低 CPU 4核或以上，内存 8G 或以上，显卡非必须
-- Windows 10 或 MacOS 11.0 以上系统
+- Recommended minimum 4 CPU cores or more, 8G of memory or more, GPU is not required
+- Windows 10 or MacOS 11.0, and their later versions
 
-## 快速开始 🚀
+## Installation & Deployment 📥
 
-下载一键启动包，解压直接使用（路径不要有 **中文**、**特殊字符**、**空格**）
+- Try to avoid using **Chinese paths** to prevent unpredictable issues
+- Ensure your **network** is stable, meaning you can access foreign websites normally
 
-### Windows
-- 百度网盘（1.2.1 最新版本）: https://pan.baidu.com/s/1pSNjxTYiVENulTLm6zieMQ?pwd=g36q 提取码: g36q
-
-下载后，建议先**双击执行** `update.bat` 更新到**最新代码**，然后双击 `start.bat` 启动
-
-启动后，会自动打开浏览器（如果打开是空白，建议换成 **Chrome** 或者 **Edge** 打开）
-
-### 其他系统
-
-还没有制作一键启动包，看下面的 **安装部署** 部分，建议使用 **docker** 部署，更加方便。
-
-## 安装部署 📥
-
-### 前提条件
-
-- 尽量不要使用 **中文路径**，避免出现一些无法预料的问题
-- 请确保你的 **网络** 是正常的，VPN需要打开`全局流量`模式
-
-#### ① 克隆代码
+#### ① Clone the Project
 
 ```shell
 git clone https://github.com/harry0703/MoneyPrinterTurbo.git
 ```
 
-#### ② 修改配置文件
+#### ② Modify the Configuration File
 
-- 将 `config.example.toml` 文件复制一份，命名为 `config.toml`
-- 按照 `config.toml` 文件中的说明，配置好 `pexels_api_keys` 和 `llm_provider`，并根据 llm_provider 对应的服务商，配置相关的
-  API Key
+- Copy the `config.example.toml` file and rename it to `config.toml`
+- Follow the instructions in the `config.toml` file to configure `pexels_api_keys` and `llm_provider`, and according to
+  the llm_provider's service provider, set up the corresponding API Key
 
-### Docker部署 🐳
+#### ③ Configure Large Language Models (LLM)
 
-#### ① 启动Docker
+- To use `GPT-4.0` or `GPT-3.5`, you need an `API Key` from `OpenAI`. If you don't have one, you can set `llm_provider`
+  to `g4f` (a free-to-use GPT library https://github.com/xtekky/gpt4free)
 
-如果未安装 Docker，请先安装 https://www.docker.com/products/docker-desktop/
+### Docker Deployment 🐳
 
-如果是Windows系统，请参考微软的文档：
+#### ① Launch the Docker Container
 
-1. https://learn.microsoft.com/zh-cn/windows/wsl/install
-2. https://learn.microsoft.com/zh-cn/windows/wsl/tutorials/wsl-containers
+If you haven't installed Docker, please install it first https://www.docker.com/products/docker-desktop/
+If you are using a Windows system, please refer to Microsoft's documentation:
+
+1. https://learn.microsoft.com/en-us/windows/wsl/install
+2. https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers
 
 ```shell
 cd MoneyPrinterTurbo
 docker-compose up
 ```
 
-> 注意：最新版的docker安装时会自动以插件的形式安装docker compose，启动命令调整为docker compose up
+> Note：The latest version of docker will automatically install docker compose in the form of a plug-in, and the start command is adjusted to `docker compose up `
 
-#### ② 访问Web界面
+#### ② Access the Web Interface
 
-打开浏览器，访问 http://0.0.0.0:8501
+Open your browser and visit http://0.0.0.0:8501
 
-#### ③ 访问API文档
+#### ③ Access the API Interface
 
-打开浏览器，访问 http://0.0.0.0:8080/docs 或者 http://0.0.0.0:8080/redoc
+Open your browser and visit http://0.0.0.0:8080/docs Or http://0.0.0.0:8080/redoc
 
-### 手动部署 📦
+### Manual Deployment 📦
 
-> 视频教程
+#### ① Create a Python Virtual Environment
 
-- 完整的使用演示：https://v.douyin.com/iFhnwsKY/
-- 如何在Windows上部署：https://v.douyin.com/iFyjoW3M
-
-#### ① 创建虚拟环境
-
-建议使用 [conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) 创建 python 虚拟环境
+It is recommended to create a Python virtual environment
+using [conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)
 
 ```shell
 git clone https://github.com/harry0703/MoneyPrinterTurbo.git
@@ -194,30 +177,36 @@ conda activate MoneyPrinterTurbo
 pip install -r requirements.txt
 ```
 
-#### ② 安装好 ImageMagick
+#### ② Install ImageMagick
 
-- Windows:
-    - 下载 https://imagemagick.org/script/download.php 选择Windows版本，切记一定要选择 **静态库** 版本，比如
-      ImageMagick-7.1.1-32-Q16-x64-**static**.exe
-    - 安装下载好的 ImageMagick，**注意不要修改安装路径**
-    - 修改 `配置文件 config.toml` 中的 `imagemagick_path` 为你的 **实际安装路径**
+###### Windows:
 
-- MacOS:
-  ```shell
-  brew install imagemagick
-  ````
-- Ubuntu
-  ```shell
-  sudo apt-get install imagemagick
-  ```
-- CentOS
-  ```shell
-  sudo yum install ImageMagick
-  ```
+- Download https://imagemagick.org/archive/binaries/ImageMagick-7.1.1-29-Q16-x64-static.exe
+- Install the downloaded ImageMagick, **do not change the installation path**
+- Modify the `config.toml` configuration file, set `imagemagick_path` to your actual installation path (if you didn't
+  change the path during installation, just uncomment it)
 
-#### ③ 启动Web界面 🌐
+###### MacOS:
 
-注意需要到 MoneyPrinterTurbo 项目 `根目录` 下执行以下命令
+```shell
+brew install imagemagick
+````
+
+###### Ubuntu
+
+```shell
+sudo apt-get install imagemagick
+```
+
+###### CentOS
+
+```shell
+sudo yum install ImageMagick
+```
+
+#### ③ Launch the Web Interface 🌐
+
+Note that you need to execute the following commands in the `root directory` of the MoneyPrinterTurbo project
 
 ###### Windows
 
@@ -233,47 +222,45 @@ conda activate MoneyPrinterTurbo
 sh webui.sh
 ```
 
-启动后，会自动打开浏览器（如果打开是空白，建议换成 **Chrome** 或者 **Edge** 打开）
+After launching, the browser will open automatically
 
-#### ④ 启动API服务 🚀
+#### ④ Launch the API Service 🚀
 
 ```shell
 python main.py
 ```
 
-启动后，可以查看 `API文档` http://127.0.0.1:8080/docs 或者 http://127.0.0.1:8080/redoc 直接在线调试接口，快速体验。
+After launching, you can view the `API documentation` at http://127.0.0.1:8080/docs and directly test the interface
+online for a quick experience.
 
-## 语音合成 🗣
+## Voice Synthesis 🗣
 
-所有支持的声音列表，可以查看：[声音列表](./docs/voice-list.txt)
+A list of all supported voices can be viewed here: [Voice List](./docs/voice-list.txt)
 
-2024-04-16 v1.1.2 新增了9种Azure的语音合成声音，需要配置API KEY，该声音合成的更加真实。
+## Subtitle Generation 📜
 
-## 字幕生成 📜
+Currently, there are 2 ways to generate subtitles:
 
-当前支持2种字幕生成方式：
+- edge: Faster generation speed, better performance, no specific requirements for computer configuration, but the
+  quality may be unstable
+- whisper: Slower generation speed, poorer performance, specific requirements for computer configuration, but more
+  reliable quality
 
-- **edge**: 生成`速度快`，性能更好，对电脑配置没有要求，但是质量可能不稳定
-- **whisper**: 生成`速度慢`，性能较差，对电脑配置有一定要求，但是`质量更可靠`。
+You can switch between them by modifying the `subtitle_provider` in the `config.toml` configuration file
 
-可以修改 `config.toml` 配置文件中的 `subtitle_provider` 进行切换
+It is recommended to use `edge` mode, and switch to `whisper` mode if the quality of the subtitles generated is not
+satisfactory.
 
-建议使用 `edge` 模式，如果生成的字幕质量不好，再切换到 `whisper` 模式
+> Note:
+> If left blank, it means no subtitles will be generated.
 
-> 注意：
+**Download whisper**
+- Please ensure a good internet connectivity
+- `whisper` model can be downloaded from HuggingFace: https://huggingface.co/openai/whisper-large-v3/tree/main
 
-1. whisper 模式下需要到 HuggingFace 下载一个模型文件，大约 3GB 左右，请确保网络通畅
-2. 如果留空，表示不生成字幕。
+After downloading the model to local machine, copy the whole folder and put it into the following path: `.\MoneyPrinterTurbo\models`
 
-> 由于国内无法访问 HuggingFace，可以使用以下方法下载 `whisper-large-v3` 的模型文件
-
-下载地址：
-
-- 百度网盘: https://pan.baidu.com/s/11h3Q6tsDtjQKTjUu3sc5cA?pwd=xjs9
-- 夸克网盘：https://pan.quark.cn/s/3ee3d991d64b
-
-模型下载后解压，整个目录放到 `.\MoneyPrinterTurbo\models` 里面，
-最终的文件路径应该是这样: `.\MoneyPrinterTurbo\models\whisper-large-v3`
+This is what the final path should look like: `.\MoneyPrinterTurbo\models\whisper-large-v3`
 
 ```
 MoneyPrinterTurbo  
@@ -286,112 +273,101 @@ MoneyPrinterTurbo
   │          vocabulary.json
 ```
 
-## 背景音乐 🎵
+## Background Music 🎵
 
-用于视频的背景音乐，位于项目的 `resource/songs` 目录下。
-> 当前项目里面放了一些默认的音乐，来自于 YouTube 视频，如有侵权，请删除。
+Background music for videos is located in the project's `resource/songs` directory.
+> The current project includes some default music from YouTube videos. If there are copyright issues, please delete
+> them.
 
-## 字幕字体 🅰
+## Subtitle Fonts 🅰
 
-用于视频字幕的渲染，位于项目的 `resource/fonts` 目录下，你也可以放进去自己的字体。
+Fonts for rendering video subtitles are located in the project's `resource/fonts` directory, and you can also add your
+own fonts.
 
-## 常见问题 🤔
+## Common Questions 🤔
 
-### ❓如何使用免费的OpenAI GPT-3.5模型?
+### ❓How to Use the Free OpenAI GPT-3.5 Model?
 
-[OpenAI宣布ChatGPT里面3.5已经免费了](https://openai.com/blog/start-using-chatgpt-instantly)，有开发者将其封装成了API，可以直接调用
+[OpenAI has announced that ChatGPT with 3.5 is now free](https://openai.com/blog/start-using-chatgpt-instantly), and
+developers have wrapped it into an API for direct usage.
 
-**确保你安装和启动了docker服务**，执行以下命令启动docker服务
+**Ensure you have Docker installed and running**. Execute the following command to start the Docker service:
 
 ```shell
 docker run -p 3040:3040 missuo/freegpt35
 ```
 
-启动成功后，修改 `config.toml` 中的配置
+Once successfully started, modify the `config.toml` configuration as follows:
 
-- `llm_provider` 设置为 `openai`
-- `openai_api_key` 随便填写一个即可，比如 '123456'
-- `openai_base_url` 改为 `http://localhost:3040/v1/`
-- `openai_model_name` 改为 `gpt-3.5-turbo`
-
-> 注意：该方式稳定性较差
-
-### ❓AttributeError: 'str' object has no attribute 'choices'`
-
-这个问题是由于大模型没有返回正确的回复导致的。
-
-大概率是网络原因， 使用 **VPN**，或者设置 `openai_base_url` 为你的代理 ，应该就可以解决了。
-
-同时建议使用 **Moonshot** 或 **DeepSeek** 作为大模型提供商，这两个服务商在国内访问速度更快，更加稳定。
+- Set `llm_provider` to `openai`
+- Fill in `openai_api_key` with any value, for example, '123456'
+- Change `openai_base_url` to `http://localhost:3040/v1/`
+- Set `openai_model_name` to `gpt-3.5-turbo`
 
 ### ❓RuntimeError: No ffmpeg exe could be found
 
-通常情况下，ffmpeg 会被自动下载，并且会被自动检测到。
-但是如果你的环境有问题，无法自动下载，可能会遇到如下错误：
+Normally, ffmpeg will be automatically downloaded and detected.
+However, if your environment has issues preventing automatic downloads, you may encounter the following error:
 
 ```
 RuntimeError: No ffmpeg exe could be found.
 Install ffmpeg on your system, or set the IMAGEIO_FFMPEG_EXE environment variable.
 ```
 
-此时你可以从 https://www.gyan.dev/ffmpeg/builds/ 下载ffmpeg，解压后，设置 `ffmpeg_path` 为你的实际安装路径即可。
+In this case, you can download ffmpeg from https://www.gyan.dev/ffmpeg/builds/, unzip it, and set `ffmpeg_path` to your
+actual installation path.
 
 ```toml
 [app]
-# 请根据你的实际路径设置，注意 Windows 路径分隔符为 \\
+# Please set according to your actual path, note that Windows path separators are \\
 ffmpeg_path = "C:\\Users\\harry\\Downloads\\ffmpeg.exe"
 ```
 
-### ❓ImageMagick的安全策略阻止了与临时文件@/tmp/tmpur5hyyto.txt相关的操作
+### ❓Error generating audio or downloading videos
 
-可以在ImageMagick的配置文件policy.xml中找到这些策略。
-这个文件通常位于 /etc/ImageMagick-`X`/ 或 ImageMagick 安装目录的类似位置。
-修改包含`pattern="@"`的条目，将`rights="none"`更改为`rights="read|write"`以允许对文件的读写操作。
+[issue 56](https://github.com/harry0703/MoneyPrinterTurbo/issues/56)
 
-### ❓OSError: [Errno 24] Too many open files
-
-这个问题是由于系统打开文件数限制导致的，可以通过修改系统的文件打开数限制来解决。
-
-查看当前限制
-
-```shell
-ulimit -n
+```
+failed to generate audio, maybe the network is not available. 
+if you are in China, please use a VPN.
 ```
 
-如果过低，可以调高一些，比如
+[issue 44](https://github.com/harry0703/MoneyPrinterTurbo/issues/44)
 
-```shell
-ulimit -n 10240
+```
+failed to download videos, maybe the network is not available. 
+if you are in China, please use a VPN.
 ```
 
-### ❓Whisper 模型下载失败，出现如下错误
+This is likely due to network issues preventing access to foreign services. Please use a VPN to resolve this.
 
-LocalEntryNotfoundEror: Cannot find an appropriate cached snapshotfolderfor the specified revision on the local disk and
-outgoing trafic has been disabled.
-To enablerepo look-ups and downloads online, pass 'local files only=False' as input.
+### ❓ImageMagick is not installed on your computer
 
-或者
+[issue 33](https://github.com/harry0703/MoneyPrinterTurbo/issues/33)
 
-An error occured while synchronizing the model Systran/faster-whisper-large-v3 from the Hugging Face Hub:
-An error happened while trying to locate the files on the Hub and we cannot find the appropriate snapshot folder for the
-specified revision on the local disk. Please check your internet connection and try again.
-Trying to load the model directly from the local cache, if it exists.
+1. Follow the `example configuration` provided `download address` to
+   install https://imagemagick.org/archive/binaries/ImageMagick-7.1.1-30-Q16-x64-static.exe, using the static library
+2. Do not install in a path with Chinese characters to avoid unpredictable issues
 
-解决方法：[点击查看如何从网盘手动下载模型](#%E5%AD%97%E5%B9%95%E7%94%9F%E6%88%90-)
+[issue 54](https://github.com/harry0703/MoneyPrinterTurbo/issues/54#issuecomment-2017842022)
 
-## 反馈建议 📢
+For Linux systems, you can manually install it, refer to https://cn.linux-console.net/?p=16978
 
-- 可以提交 [issue](https://github.com/harry0703/MoneyPrinterTurbo/issues)
-  或者 [pull request](https://github.com/harry0703/MoneyPrinterTurbo/pulls)。
+Thanks to [@wangwenqiao666](https://github.com/wangwenqiao666) for their research and exploration
 
-## 参考项目 📚
+## Feedback & Suggestions 📢
 
-该项目基于 https://github.com/FujiwaraChoki/MoneyPrinter 重构而来，做了大量的优化，增加了更多的功能。
-感谢原作者的开源精神。
+- You can submit an [issue](https://github.com/harry0703/MoneyPrinterTurbo/issues) or
+  a [pull request](https://github.com/harry0703/MoneyPrinterTurbo/pulls).
 
-## 许可证 📝
+## Reference Projects 📚
 
-点击查看 [`LICENSE`](LICENSE) 文件
+This project is based on https://github.com/FujiwaraChoki/MoneyPrinter and has been refactored with a lot of
+optimizations and added functionalities. Thanks to the original author for their spirit of open source.
+
+## License 📝
+
+Click to view the [`LICENSE`](LICENSE) file
 
 ## Star History
 
