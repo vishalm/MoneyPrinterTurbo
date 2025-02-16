@@ -289,6 +289,7 @@ Generate a script for a video, depending on the subject of the video.
     logger.info(f"subject: {video_subject}")
 
     def format_response(response):
+        response = re.sub(r"<think>.*?</think>", "", response, flags=re.DOTALL)
         # Clean the script
         # Remove asterisks, hashes
         response = response.replace("*", "")
@@ -300,6 +301,12 @@ Generate a script for a video, depending on the subject of the video.
 
         # Split the script into paragraphs
         paragraphs = response.split("\n\n")
+        
+        # Remove any <think> tags and their content
+        
+        # Remove any <think> tags and their content
+        response = re.sub(r"<think>.*?</think>", "", response, flags=re.DOTALL)
+        print(response)
 
         # Select the specified number of paragraphs
         # selected_paragraphs = paragraphs[:paragraph_number]
@@ -307,9 +314,18 @@ Generate a script for a video, depending on the subject of the video.
         # Join the selected paragraphs into a single string
         return "\n\n".join(paragraphs)
 
+
+
     for i in range(_max_retries):
         try:
+            print(prompt)
             response = _generate_response(prompt=prompt)
+            
+            print(response)
+            if not response:  # Check if the response is None or empty
+                logger.error("Received empty or None response")
+                return "Error: Empty response from LLM"
+
             if response:
                 final_script = format_response(response)
             else:
@@ -367,6 +383,9 @@ Please note that you must use English for generating video search terms; Chinese
     for i in range(_max_retries):
         try:
             response = _generate_response(prompt)
+            if not response:  # Check if the response is None or empty
+                logger.error("Received empty or None response")
+                return "Error: Empty response from LLM"
             if "Error: " in response:
                 logger.error(f"failed to generate video script: {response}")
                 return response
